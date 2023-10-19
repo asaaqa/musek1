@@ -4,10 +4,10 @@ from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from Chizuru import app
-from Chizuru.utils import help_pannel
-from Chizuru.utils.database import get_lang
-from Chizuru.utils.decorators.language import LanguageStart, languageCB
-from Chizuru.utils.inline.help import help_back_markup, private_help_panel
+from Chizuru.Helper import help_pannel
+from Chizuru.Helper.database import get_lang
+from Chizuru.Helper.decorators.language import LanguageStart, languageCB
+from Chizuru.Helper.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
 
