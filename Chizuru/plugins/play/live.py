@@ -1,9 +1,9 @@
 from pyrogram import filters
 
 from Chizuru import YouTube, app
-from Chizuru.utils.channelplay import get_channeplayCB
-from Chizuru.utils.decorators.language import languageCB
-from Chizuru.utils.stream.stream import stream
+from Chizuru.Helper.channelplay import get_channeplayCB
+from Chizuru.Helper.decorators.language import languageCB
+from Chizuru.Helper.stream.stream import stream
 from config import BANNED_USERS
 
 
