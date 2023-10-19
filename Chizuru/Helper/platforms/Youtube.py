@@ -8,8 +8,8 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from Chizuru.utils.database import is_on_off
-from Chizuru.utils.formatters import time_to_seconds
+from Chizuru.Helper.database import is_on_off
+from Chizuru.Helper.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
