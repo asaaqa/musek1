@@ -4,9 +4,9 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from Chizuru import YouTube, app
-from Chizuru.core.call import Chizuru
+from Chizuru.Helper.core.call import Chizuru
 from Chizuru.misc import SUDOERS, db
-from Chizuru.utils.database import (
+from Chizuru.Helper.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -17,11 +17,11 @@ from Chizuru.utils.database import (
     music_on,
     set_loop,
 )
-from Chizuru.utils.decorators.language import languageCB
-from Chizuru.utils.formatters import seconds_to_min
-from Chizuru.utils.inline import close_markup, stream_markup, stream_markup_timer
-from Chizuru.utils.stream.autoclear import auto_clean
-from Chizuru.utils.thumbnails import get_thumb
+from Chizuru.Helper.decorators.language import languageCB
+from Chizuru.Helper.formatters import seconds_to_min
+from Chizuru.Helper.inline import close_markup, stream_markup, stream_markup_timer
+from Chizuru.Helper.stream.autoclear import auto_clean
+from Chizuru.Helper.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
