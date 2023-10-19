@@ -1,5 +1,5 @@
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.database import get_lang, is_maintenance
+from Chizuru.Helper.database import get_lang, is_maintenance
 from strings import get_string
 
 
