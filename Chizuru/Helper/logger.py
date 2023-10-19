@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
 from Chizuru import app
-from Chizuru.utils.database import is_on_off
+from Chizuru.Helper.database import is_on_off
 from config import LOGGER_ID
 
 
