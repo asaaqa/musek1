@@ -9,7 +9,7 @@ import config
 from Chizuru import app
 from Chizuru.misc import _boot_
 from Chizuru.plugins.sudo.sudoers import sudoers_list
-from Chizuru.utils.database import (
+from Chizuru.Helper.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -17,9 +17,9 @@ from Chizuru.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from Chizuru.utils.decorators.language import LanguageStart
-from Chizuru.utils.formatters import get_readable_time
-from Chizuru.utils.inline import help_pannel, private_panel, start_panel
+from Chizuru.Helper.decorators.language import LanguageStart
+from Chizuru.Helper.formatters import get_readable_time
+from Chizuru.Helper.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
