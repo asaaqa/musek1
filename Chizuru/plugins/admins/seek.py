@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Chizuru import YouTube, app
-from Chizuru.core.call import Chizuru
+from Chizuru.Helper.core.call import Chizuru
 from Chizuru.misc import db
-from Chizuru.utils import AdminRightsCheck, seconds_to_min
-from Chizuru.utils.inline import close_markup
+from Chizuru.Helper import AdminRightsCheck, seconds_to_min
+from Chizuru.Helper.inline import close_markup
 from config import BANNED_USERS
 
 
