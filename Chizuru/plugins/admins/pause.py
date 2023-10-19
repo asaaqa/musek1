@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Chizuru import app
-from Chizuru.core.call import Chizuru
-from Chizuru.utils.database import is_music_playing, music_off
-from Chizuru.utils.decorators import AdminRightsCheck
-from Chizuru.utils.inline import close_markup
+from Chizuru.Helper.core.call import Chizuru
+from Chizuru.Helper.database import is_music_playing, music_off
+from Chizuru.Helper.decorators import AdminRightsCheck
+from Chizuru.Helper.inline import close_markup
 from config import BANNED_USERS
 
 
