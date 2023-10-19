@@ -1,7 +1,7 @@
-from Chizuru.core.bot import Chizuru
-from Chizuru.core.dir import dirr
-from Chizuru.core.git import git
-from Chizuru.core.userbot import Userbot
+from Chizuru.Helper.core.bot import Chizuru
+from Chizuru.Helper.core.dir import dirr
+from Chizuru.Helper.core.git import git
+from Chizuru.Helper.core.userbot import Userbot
 from Chizuru.misc import dbb, heroku
 
 from .logging import LOGGER
@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-Chizuru = Chizuru()
+app = Chizuru()
 userbot = Userbot()
 
 
