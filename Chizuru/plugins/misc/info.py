@@ -2,7 +2,7 @@ import asyncio, os, time, aiohttp
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 from asyncio import sleep
-from Chizuru import app as Hiroko
+from Chizuru import app
 from pyrogram import filters, Client, enums
 from pyrogram.enums import ParseMode
 from pyrogram.types import *
@@ -59,8 +59,8 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "Chizuru/assets/userinfo.png"
-font_path = "Chizuru/assets/hiroko.ttf"
+bg_path = "Chizuru/resources/userinfo.png"
+font_path = "Chizuru/resources/hiroko.ttf"
 
 # --------------------------------------------------------------------------------- #
 
@@ -87,7 +87,7 @@ INFO_TEXT = """
 
 async def userstatus(user_id):
    try:
-      user = await Hiroko.get_users(user_id)
+      user = await app.get_users(user_id)
       x = user.status
       if x == enums.UserStatus.RECENTLY:
          return "User was seen recently."
@@ -105,7 +105,7 @@ async def userstatus(user_id):
 
 # --------------------------------------------------------------------------------- #
 
-@Hiroko.on_message(filters.command(["info", "userinfo"]))
+@app.on_message(filters.command(["info", "userinfo"]))
 async def userinfo(_, message):
     chat_id = message.chat.id
     user_id = message.from_user.id
@@ -113,8 +113,8 @@ async def userinfo(_, message):
     if not message.reply_to_message and len(message.command) == 2:
         try:
             user_id = message.text.split(None, 1)[1]
-            user_info = await Hiroko.get_chat(user_id)
-            user = await Hiroko.get_users(user_id)
+            user_info = await app.get_chat(user_id)
+            user = await app.get_users(user_id)
             status = await userstatus(user.id)
             id = user_info.id
             dc_id = user.dc_id
@@ -122,22 +122,22 @@ async def userinfo(_, message):
             username = user_info.username
             mention = user.mention
             bio = user_info.bio
-            photo = await Hiroko.download_media(user.photo.big_file_id)
+            photo = await app.download_media(user.photo.big_file_id)
             welcome_photo = await get_userinfo_img(
                 bg_path=bg_path,
                 font_path=font_path,
                 user_id=user_id,
                 profile_path=photo,
             )
-            await Hiroko.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
+            await app.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
                 id, name, username, mention, status, dc_id, bio), reply_to_message_id=message.id)
         except Exception as e:
             await message.reply_text(str(e))        
       
     elif not message.reply_to_message:
         try:
-            user_info = await Hiroko.get_chat(user_id)
-            user = await Hiroko.get_users(user_id)
+            user_info = await app.get_chat(user_id)
+            user = await app.get_users(user_id)
             status = await userstatus(user.id)
             id = user_info.id
             dc_id = user.dc_id
@@ -145,14 +145,14 @@ async def userinfo(_, message):
             username = user_info.username
             mention = user.mention
             bio = user_info.bio
-            photo = await Hiroko.download_media(user.photo.big_file_id)
+            photo = await app.download_media(user.photo.big_file_id)
             welcome_photo = await get_userinfo_img(
                 bg_path=bg_path,
                 font_path=font_path,
                 user_id=user_id,
                 profile_path=photo,
             )
-            await Hiroko.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
+            await app.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
                 id, name, username, mention, status, dc_id, bio), reply_to_message_id=message.id)
         except Exception as e:
             await message.reply_text(str(e))
@@ -161,8 +161,8 @@ async def userinfo(_, message):
     elif message.reply_to_message:
         user_id = message.reply_to_message.from_user.id
         try:
-            user_info = await Hiroko.get_chat(user_id)
-            user = await Hiroko.get_users(user_id)
+            user_info = await app.get_chat(user_id)
+            user = await app.get_users(user_id)
             status = await userstatus(user.id)
             id = user_info.id
             dc_id = user.dc_id
@@ -170,14 +170,14 @@ async def userinfo(_, message):
             username = user_info.username
             mention = user.mention
             bio = user_info.bio
-            photo = await Hiroko.download_media(message.reply_to_message.from_user.photo.big_file_id)
+            photo = await app.download_media(message.reply_to_message.from_user.photo.big_file_id)
             welcome_photo = await get_userinfo_img(
                 bg_path=bg_path,
                 font_path=font_path,
                 user_id=user_id,
                 profile_path=photo,
             )
-            await Hiroko.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
+            await app.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
                 id, name, username, mention, status, dc_id, bio), reply_to_message_id=message.id)
         except Exception as e:
             await message.reply_text(str(e))
