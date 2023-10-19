@@ -2,7 +2,7 @@ import random
 from typing import Dict, List, Union
 
 from Chizuru import userbot
-from Chizuru.core.mongo import mongodb
+from Chizuru.Helper.core.mongo import mongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
