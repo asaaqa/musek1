@@ -19,7 +19,7 @@ from pytgcalls.types.stream import StreamAudioEnded
 import config
 from Chizuru import LOGGER, YouTube, app
 from Chizuru.misc import db
-from Chizuru.utils.database import (
+from Chizuru.Helper.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,11 +31,11 @@ from Chizuru.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from Chizuru.utils.exceptions import AssistantErr
-from Chizuru.utils.formatters import check_duration, seconds_to_min, speed_converter
-from Chizuru.utils.inline.play import stream_markup
-from Chizuru.utils.stream.autoclear import auto_clean
-from Chizuru.utils.thumbnails import get_thumb
+from Chizuru.Helper.exceptions import AssistantErr
+from Chizuru.Helper.formatters import check_duration, seconds_to_min, speed_converter
+from Chizuru.Helper.inline.play import stream_markup
+from Chizuru.Helper.stream.autoclear import auto_clean
+from Chizuru.Helper.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
