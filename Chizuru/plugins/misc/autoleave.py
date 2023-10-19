@@ -5,8 +5,8 @@ from pyrogram.enums import ChatType
 
 import config
 from Chizuru import app
-from Chizuru.core.call import Chizuru, autoend
-from Chizuru.utils.database import get_client, is_active_chat, is_autoend
+from Chizuru.Helper.core.call import Chizuru, autoend
+from Chizuru.Helper.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
