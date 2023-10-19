@@ -2,7 +2,7 @@ import asyncio
 from typing import Union
 
 from Chizuru.misc import db
-from Chizuru.utils.formatters import check_duration, seconds_to_min
+from Chizuru.Helper.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 
