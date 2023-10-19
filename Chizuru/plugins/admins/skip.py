@@ -3,13 +3,13 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from Chizuru import YouTube, app
-from Chizuru.core.call import Chizuru
+from Chizuru.Helper.core.call import Chizuru
 from Chizuru.misc import db
-from Chizuru.utils.database import get_loop
-from Chizuru.utils.decorators import AdminRightsCheck
-from Chizuru.utils.inline import close_markup, stream_markup
-from Chizuru.utils.stream.autoclear import auto_clean
-from Chizuru.utils.thumbnails import get_thumb
+from Chizuru.Helper.database import get_loop
+from Chizuru.Helper.decorators import AdminRightsCheck
+from Chizuru.Helper.inline import close_markup, stream_markup
+from Chizuru.Helper.stream.autoclear import auto_clean
+from Chizuru.Helper.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
