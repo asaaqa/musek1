@@ -1,5 +1,5 @@
 from Chizuru import app
-from Chizuru.utils.database import get_cmode
+from Chizuru.Helper.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
