@@ -9,7 +9,7 @@ from pyrogram.types import (
 )
 
 from Chizuru import app
-from Chizuru.utils.database import (
+from Chizuru.Helper.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -25,15 +25,15 @@ from Chizuru.utils.database import (
     skip_off,
     skip_on,
 )
-from Chizuru.utils.decorators.admins import ActualAdminCB
-from Chizuru.utils.decorators.language import language, languageCB
-from Chizuru.utils.inline.settings import (
+from Chizuru.Helper.decorators.admins import ActualAdminCB
+from Chizuru.Helper.decorators.language import language, languageCB
+from Chizuru.Helper.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from Chizuru.utils.inline.start import private_panel
+from Chizuru.Helper.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
 
