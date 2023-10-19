@@ -6,14 +6,14 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from Chizuru import Carbon, YouTube, app
-from Chizuru.core.call import Chizuru
+from Chizuru.Helper.core.call import Chizuru
 from Chizuru.misc import db
-from Chizuru.utils.database import add_active_video_chat, is_active_chat
-from Chizuru.utils.exceptions import AssistantErr
-from Chizuru.utils.inline import aq_markup, close_markup, stream_markup
-from Chizuru.utils.pastebin import ChizuruBin
-from Chizuru.utils.stream.queue import put_queue, put_queue_index
-from Chizuru.utils.thumbnails import get_thumb
+from Chizuru.Helper.database import add_active_video_chat, is_active_chat
+from Chizuru.Helper.exceptions import AssistantErr
+from Chizuru.Helper.inline import aq_markup, close_markup, stream_markup
+from Chizuru.Helper.pastebin import ChizuruBin
+from Chizuru.Helper.stream.queue import put_queue, put_queue_index
+from Chizuru.Helper.thumbnails import get_thumb
 
 
 async def stream(
