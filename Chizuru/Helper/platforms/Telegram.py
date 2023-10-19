@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
 from Chizuru import app
-from Chizuru.utils.formatters import (
+from Chizuru.Helper.formatters import (
     check_duration,
     convert_bytes,
     get_readable_time,
