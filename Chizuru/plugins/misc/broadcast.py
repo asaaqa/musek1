@@ -6,15 +6,15 @@ from pyrogram.errors import FloodWait
 
 from Chizuru import app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.database import (
+from Chizuru.Helper.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from Chizuru.utils.decorators.language import language
-from Chizuru.utils.formatters import alpha_to_int
+from Chizuru.Helper.decorators.language import language
+from Chizuru.Helper.formatters import alpha_to_int
 from config import adminlist
 
 IS_BROADCASTING = False
