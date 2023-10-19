@@ -2,15 +2,15 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Chizuru import app
-from Chizuru.utils import extract_user, int_to_alpha
-from Chizuru.utils.database import (
+from Chizuru.Helper import extract_user, int_to_alpha
+from Chizuru.Helper.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from Chizuru.utils.decorators import AdminActual, language
-from Chizuru.utils.inline import close_markup
+from Chizuru.Helper.decorators import AdminActual, language
+from Chizuru.Helper.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
