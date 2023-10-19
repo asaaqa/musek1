@@ -9,7 +9,7 @@ from Chizuru import LOGGER, app, userbot
 from Chizuru.Helper.core.call import Chizuru
 from Chizuru.misc import sudo
 from Chizuru.plugins import ALL_MODULES
-from Chizuru.Helper.utils.database import get_banned_users, get_gbanned
+from Chizuru.Helper.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
