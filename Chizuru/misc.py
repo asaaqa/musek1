@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from Chizuru.core.mongo import mongodb
+from Chizuru.Helper.core.mongo import mongodb
 
 from .logging import LOGGER
 
