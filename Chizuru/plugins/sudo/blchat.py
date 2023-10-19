@@ -3,8 +3,8 @@ from pyrogram.types import Message
 
 from Chizuru import app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from Chizuru.utils.decorators.language import language
+from Chizuru.Helper.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from Chizuru.Helper.decorators.language import language
 from config import BANNED_USERS
 
 
