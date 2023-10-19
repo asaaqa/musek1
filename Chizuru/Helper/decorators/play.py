@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from Chizuru import YouTube, app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.database import (
+from Chizuru.Helper.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -20,7 +20,7 @@ from Chizuru.utils.database import (
     is_active_chat,
     is_maintenance,
 )
-from Chizuru.utils.inline import botplaylist_markup
+from Chizuru.Helper.inline import botplaylist_markup
 from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
 from strings import get_string
 
