@@ -2,12 +2,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Chizuru import app
-from Chizuru.core.call import Chizuru
+from Chizuru.Helper.core.call import Chizuru
 from Chizuru.misc import SUDOERS, db
-from Chizuru.utils import AdminRightsCheck
-from Chizuru.utils.database import is_active_chat, is_nonadmin_chat
-from Chizuru.utils.decorators.language import languageCB
-from Chizuru.utils.inline import close_markup, speed_markup
+from Chizuru.Helper import AdminRightsCheck
+from Chizuru.Helper.database import is_active_chat, is_nonadmin_chat
+from Chizuru.Helper.decorators.language import languageCB
+from Chizuru.Helper.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
