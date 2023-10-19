@@ -1,4 +1,4 @@
-from Chizuru.core.bot import DAXX
+from Chizuru.core.bot import Chizuru
 from Chizuru.core.dir import dirr
 from Chizuru.core.git import git
 from Chizuru.core.userbot import Userbot
@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = DAXX()
+Chizuru = Chizuru()
 userbot = Userbot()
 
 
