@@ -7,21 +7,21 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from Chizuru import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from Chizuru.core.call import Chizuru
-from Chizuru.utils import seconds_to_min, time_to_seconds
-from Chizuru.utils.channelplay import get_channeplayCB
-from Chizuru.utils.decorators.language import languageCB
-from Chizuru.utils.decorators.play import PlayWrapper
-from Chizuru.utils.formatters import formats
-from Chizuru.utils.inline import (
+from Chizuru.Helper.core.call import Chizuru
+from Chizuru.Helper import seconds_to_min, time_to_seconds
+from Chizuru.Helper.channelplay import get_channeplayCB
+from Chizuru.Helper.decorators.language import languageCB
+from Chizuru.Helper.decorators.play import PlayWrapper
+from Chizuru.Helper.formatters import formats
+from Chizuru.Helper.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from Chizuru.utils.logger import play_logs
-from Chizuru.utils.stream.stream import stream
+from Chizuru.Helper.logger import play_logs
+from Chizuru.Helper.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
