@@ -3,8 +3,8 @@ from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
 from Chizuru import app
-from Chizuru.utils.database import set_cmode
-from Chizuru.utils.decorators.admins import AdminActual
+from Chizuru.Helper.database import set_cmode
+from Chizuru.Helper.decorators.admins import AdminActual
 from config import BANNED_USERS
 
 
