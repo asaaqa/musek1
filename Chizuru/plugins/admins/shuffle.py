@@ -3,10 +3,10 @@ import random
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ChizuruMUSIC import app
-from ChizuruMUSIC.misc import db
-from ChizuruMUSIC.utils.decorators import AdminRightsCheck
-from ChizuruMUSIC.utils.inline import close_markup
+from Chizuru import app
+from Chizuru.misc import db
+from Chizuru.Helper.decorators import AdminRightsCheck
+from Chizuru.Helper.inline import close_markup
 from config import BANNED_USERS
 
 
