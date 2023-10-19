@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from Chizuru import app
-from Chizuru.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from Chizuru.utils.decorators import language
-from Chizuru.utils.inline.settings import playmode_users_markup
+from Chizuru.Helper.database import get_playmode, get_playtype, is_nonadmin_chat
+from Chizuru.Helper.decorators import language
+from Chizuru.Helper.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 
