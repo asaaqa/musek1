@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Chizuru import app
-from Chizuru.core.call import Chizuru
+from Chizuru.Helper.core.call import Chizuru
 
 welcome = 20
 close = 30
