@@ -3,9 +3,9 @@ from pyrogram.types import Message
 
 from Chizuru import app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.database import add_gban_user, remove_gban_user
-from Chizuru.utils.decorators.language import language
-from Chizuru.utils.extraction import extract_user
+from Chizuru.Helper.database import add_gban_user, remove_gban_user
+from Chizuru.Helper.decorators.language import language
+from Chizuru.Helper.extraction import extract_user
 from config import BANNED_USERS
 
 
