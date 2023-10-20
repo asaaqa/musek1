@@ -6,11 +6,11 @@ from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
 from Chizuru import app
-from Chizuru.core.call import Chizuru
+from Chizuru.Helper.core.call import Chizuru
 from Chizuru.misc import db
-from Chizuru.utils.database import get_assistant, get_authuser_names, get_cmode
-from Chizuru.utils.decorators import ActualAdminCB, AdminActual, language
-from Chizuru.utils.formatters import alpha_to_int, get_readable_time
+from Chizuru.Helper.database import get_assistant, get_authuser_names, get_cmode
+from Chizuru.Helper.decorators import ActualAdminCB, AdminActual, language
+from Chizuru.Helper.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 
 rel = {}
