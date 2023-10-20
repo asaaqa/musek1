@@ -6,7 +6,7 @@ from pyrogram.types import Message
 
 from Chizuru import app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.decorators.language import language
+from Chizuru.Helper.decorators.language import language
 
 
 def testspeed(m, _):
