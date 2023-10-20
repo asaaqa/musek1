@@ -12,13 +12,13 @@ from pyrogram import filters
 import config
 from Chizuru import app
 from Chizuru.misc import HAPP, SUDOERS, XCB
-from Chizuru.utils.database import (
+from Chizuru.Helper.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from Chizuru.utils.decorators.language import language
-from Chizuru.utils.pastebin import ChizuruBin
+from Chizuru.Helper.decorators.language import language
+from Chizuru.Helper.pastebin import ChizuruBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
