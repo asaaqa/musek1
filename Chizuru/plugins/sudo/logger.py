@@ -2,8 +2,8 @@ from pyrogram import filters
 
 from Chizuru import app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.database import add_off, add_on
-from Chizuru.utils.decorators.language import language
+from Chizuru.Helper.database import add_off, add_on
+from Chizuru.Helper.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
