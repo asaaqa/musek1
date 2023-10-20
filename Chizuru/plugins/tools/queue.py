@@ -8,10 +8,10 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from Chizuru import app
 from Chizuru.misc import db
-from Chizuru.utils import ChizuruBin, get_channeplayCB, seconds_to_min
-from Chizuru.utils.database import get_cmode, is_active_chat, is_music_playing
-from Chizuru.utils.decorators.language import language, languageCB
-from Chizuru.utils.inline import queue_back_markup, queue_markup
+from Chizuru.Helper import ChizuruBin, get_channeplayCB, seconds_to_min
+from Chizuru.Helper.database import get_cmode, is_active_chat, is_music_playing
+from Chizuru.Helper.decorators.language import language, languageCB
+from Chizuru.Helper.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
