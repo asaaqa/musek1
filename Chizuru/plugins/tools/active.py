@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 from Chizuru import app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.database import (
+from Chizuru.Helper.database import (
     get_active_chats,
     get_active_video_chats,
     remove_active_chat,
