@@ -3,8 +3,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
 from Chizuru import app
-from Chizuru.utils.database import get_lang, set_lang
-from Chizuru.utils.decorators import ActualAdminCB, language, languageCB
+from Chizuru.Helper.database import get_lang, set_lang
+from Chizuru.Helper.decorators import ActualAdminCB, language, languageCB
 from config import BANNED_USERS
 from strings import get_string, languages_present
 
