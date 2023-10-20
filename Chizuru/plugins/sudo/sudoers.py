@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from Chizuru import app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils.database import add_sudo, remove_sudo
-from Chizuru.utils.decorators.language import language
-from Chizuru.utils.extraction import extract_user
-from Chizuru.utils.inline import close_markup
+from Chizuru.Helper.database import add_sudo, remove_sudo
+from Chizuru.Helper.decorators.language import language
+from Chizuru.Helper.extraction import extract_user
+from Chizuru.Helper.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
