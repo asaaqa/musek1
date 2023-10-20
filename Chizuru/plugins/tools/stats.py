@@ -10,12 +10,12 @@ from pytgcalls.__version__ import __version__ as pytgver
 
 import config
 from Chizuru import app
-from Chizuru.core.userbot import assistants
+from Chizuru.Helper.core.userbot import assistants
 from Chizuru.misc import SUDOERS, mongodb
 from Chizuru.plugins import ALL_MODULES
-from Chizuru.utils.database import get_served_chats, get_served_users, get_sudoers
-from Chizuru.utils.decorators.language import language, languageCB
-from Chizuru.utils.inline.stats import back_stats_buttons, stats_buttons
+from Chizuru.Helper.database import get_served_chats, get_served_users, get_sudoers
+from Chizuru.Helper.decorators.language import language, languageCB
+from Chizuru.Helper.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
