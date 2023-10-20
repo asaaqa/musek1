@@ -6,8 +6,8 @@ from pyrogram.types import Message
 
 from Chizuru import app
 from Chizuru.misc import SUDOERS
-from Chizuru.utils import get_readable_time
-from Chizuru.utils.database import (
+from Chizuru.Helper import get_readable_time
+from Chizuru.Helper.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -15,8 +15,8 @@ from Chizuru.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from Chizuru.utils.decorators.language import language
-from Chizuru.utils.extraction import extract_user
+from Chizuru.Helper.decorators.language import language
+from Chizuru.Helper.extraction import extract_user
 from config import BANNED_USERS
 
 
