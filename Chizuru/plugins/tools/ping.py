@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Chizuru import app
-from Chizuru.core.call import Chizuru
-from Chizuru.utils import bot_sys_stats
-from Chizuru.utils.decorators.language import language
-from Chizuru.utils.inline import supp_markup
+from Chizuru.Helper.core.call import Chizuru
+from Chizuru.Helper import bot_sys_stats
+from Chizuru.Helper.decorators.language import language
+from Chizuru.Helper.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 
